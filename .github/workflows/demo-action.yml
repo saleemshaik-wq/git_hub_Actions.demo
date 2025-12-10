@@ -1,0 +1,20 @@
+name: Parallel_Workflow
+on: push
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Printing Statement1
+        run: echo "Hello GitHub Actions!"
+
+      - name: Printing Statement2
+        run: echo "Good Morning!"
+
+  second-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Printing Statement3
+        run: echo "Welcome to GitHub-Actions"
+
+      - name: Printing Statement4
+        run: echo "Classes are going well"
