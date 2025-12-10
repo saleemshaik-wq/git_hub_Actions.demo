@@ -1,7 +1,7 @@
 name: Parallel_Workflow
 on:
-  push:
   workflow_dispatch:
+  push:
 jobs:
   first-job:
     runs-on: ubuntu-latest
