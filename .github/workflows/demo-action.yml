@@ -1,5 +1,7 @@
 name: Parallel_Workflow
-on: push
+on:
+  push:
+  workflow_dispatch:
 jobs:
   first-job:
     runs-on: ubuntu-latest
@@ -8,7 +10,7 @@ jobs:
         run: echo "Hello GitHub Actions!"
 
       - name: Printing Statement2
-        run: echo "Good Morning!"
+        run: echo "Good Evening!"
 
   second-job:
     runs-on: ubuntu-latest
@@ -17,4 +19,4 @@ jobs:
         run: echo "Welcome to GitHub-Actions"
 
       - name: Printing Statement4
-        run: echo "Classes are going well"
+        run: echo "Classes are going good"
